@@ -14,6 +14,8 @@ Plugin 'prettier/vim-prettier'
 
 Plugin 'preservim/nerdtree'
 
+Plugin 'haishanh/night-owl.vim'
+
 call vundle#end()            " required
 filetype plugin indent on    " required
 
@@ -23,3 +25,10 @@ set relativenumber
 autocmd VimEnter * NERDTree | wincmd p
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
     \ quit | endif
+
+if (has("termguicolors"))
+ set termguicolors
+endif
+
+syntax enable
+colorscheme night-owl
