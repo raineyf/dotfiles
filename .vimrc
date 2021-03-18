@@ -16,6 +16,8 @@ Plugin 'preservim/nerdtree'
 
 Plugin 'haishanh/night-owl.vim'
 
+Plugin 'mattn/emmet-vim'
+
 call vundle#end()            " required
 filetype plugin indent on    " required
 
@@ -32,3 +34,8 @@ endif
 
 syntax enable
 colorscheme night-owl
+
+:set tabstop=4
+:set shiftwidth=4
+:set expandtab
+let g:user_emmet_leader_key=','
