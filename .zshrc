@@ -81,7 +81,8 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-
+export NVM_DIR=~/.nvm
+ [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
